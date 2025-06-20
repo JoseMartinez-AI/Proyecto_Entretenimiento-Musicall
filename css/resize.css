@@ -1,0 +1,25 @@
+/* Aplica solo cuando la clase in-iframe esté en <html> */
+
+.in-iframe .contenedorhome {
+  width: 100% !important;                       /* Usa todo el ancho del iframe, elimina los márgenes */
+  margin: 0 auto !important;                    /* Centrado */
+  justify-content: space-between !important;    /*Mantiene la separación */
+  overflow-x: hidden !important;                /* Previene desbordes */
+  display: flex;
+  flex-direction: row;
+}
+
+.in-iframe .contenedorpages {
+  width: 100% !important;                       /* Usa todo el ancho del iframe, elimina los márgenes */
+  margin: 0 auto !important;                    /* Centrado */
+  justify-content: space-between !important;    /*Mantiene la separación */
+  overflow-x: hidden !important;                /* Previene desbordes */
+  display: flex;
+  flex-direction: row;
+}
+
+/*.in-iframe .izquierda,
+.in-iframe .derecha {  
+  padding-left: 30px !important;
+  padding-right: 30px !important; 
+}*/

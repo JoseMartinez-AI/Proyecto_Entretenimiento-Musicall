@@ -1,0 +1,412 @@
+/* ######### CONTENEDOR TOTAL ######### */
+/* Contenedor principal centrado y con ancho fijo */
+.contenedor {
+  /*min-height: 100vh;             Altura mínima del viewport completo */
+  width: 78vw;                 /* Ancho del contenedor: 78% del ancho de la ventana */
+  padding: 0;                  /* Sin espacio interior */
+  margin: auto;                /* Centrado horizontalmente */
+  min-height: 100vh;               /*Altura total de la ventana */
+ /* display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  display: grid;
+  grid-template-rows: 110px auto 10vh;
+  background-color: white;
+}
+
+body {
+  margin: 0;              /* Margen lateral de 20px; arriba y abajo 0 */
+  padding: 0;                  /* Sin espacio interno */
+  font-family: Montserrat;     /* Fuente personalizada */
+  font-size: 12px;             /* Tamaño base del texto */
+  background: url(../img/bg.jpg); /* Fondo con imagen */ 
+  /*background-color: #fc757f;*/
+  grid-row: 2; 
+}
+
+body.bodypages{
+  background-image: none;
+  background-color: rgb(255, 251, 251);
+}
+
+html, body {
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none; /* Oculta la barra de scroll en Firefox */
+}
+
+/* Oculta la barra de scroll en Chrome, Safari y Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*################################# MENU- INICIO ####################################*/
+header {
+  width: 78vw;                    /* Ancho igual al contenedor */
+  height: 11%;                    /* Altura fija */
+  display: flex;                  /* Usa flexbox para organizar elementos */
+  flex-wrap: wrap;                /* Permite que los elementos salten de línea si es necesario */
+  justify-content: space-between; /* Espacio entre logo y menú */
+  background: white;            /* Fondo blanco */
+  grid-row: 1;
+}
+
+.header {
+  font-size: 0.75rem;          /* Tamaño de texto del encabezado */
+  background-color: white;
+}
+
+nav {
+  flex-grow: 1;                /* Ocupará todo el espacio horizontal restante */
+  background: rgb(255, 255, 255); /* Fondo blanco */
+  box-shadow: none !important;    /* Elimina cualquier sombra por defecto de Materialize */
+}
+
+.nav-wrapper {
+  box-shadow: none !important; /* También elimina la sombra interna de .nav-wrapper */
+}
+
+nav ul {
+  display: flex;               /* Flex para los elementos del menú */
+  flex-wrap: wrap;             /* Permitir que los ítems salten de línea si no entran */
+  justify-content: flex-end;   /* Alineación del menú hacia la derecha */
+  align-items: flex-end;       /* Alinea los ítems en la parte inferior */
+  gap: 2px;                    /* Espacio entre ítems del menú */
+  list-style: none;            /* Quita los puntos de la lista */
+}
+
+/*Nativo de materializecss, lo usamos para desplazar un poco el menú y no este muy arriba*/
+nav ul.right {
+  padding: 4% 0;
+}
+
+nav ul li,
+nav ul li a {
+  font-size: 0.75rem;          /* Tamaño de texto del ítem */
+  font-weight: bold;           /* Negrita */
+  text-decoration: none;       /* Sin subrayado */
+  color: black;                /* Texto negro */
+}
+
+/* Quita bordes y sombras al hacer foco o hover sobre ítems */
+.dropdown-trigger:focus,
+.dropdown-content a:focus,
+.dropdown-content a:hover {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Estilo para ítems dentro del dropdown (submenús) */
+.dropdown-content li > a,
+.dropdown-content li > span {
+  font-size: 0.75rem;          /* Tamaño del texto */
+  color: steelblue;          /* Color de texto de submenú */
+  font-weight: bold;           /* Negrita */
+  display: block;              /* Que ocupen todo el ancho del contenedor */
+  white-space: nowrap;         /* No dividir texto en varias líneas */
+}
+
+/* Hover para submenús */
+.dropdown-content li > a:hover {
+  color: black;                /* Cambia el color al pasar el mouse */
+}
+
+/* Imagen del logo */
+img.imagenlogo { 
+  display: block;               /* Se comporta como un bloque */
+  height:110px;                   /* Altura fija igual al nav */
+  width: auto;                  /* Mantiene proporciones */
+  margin: 0 auto;
+
+}
+
+/*################################# MENU - FIN ####################################*/
+
+/*################################# AUDIO - INICIO ####################################*/
+audio {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+/*################################# AUDIO - FIN ####################################*/
+
+/*################################# MAIN - INICIO ####################################*/
+
+/* Contenido main */
+.main {  
+  padding: 0;                                     /* Espaciado superior */
+  width: 100%;
+  /*width: 128.3%;                                    Igual al ancho del contenedor */  
+  min-height: 0;
+  display: flex;                                   /* Flexbox para manejar contenido interno */
+  justify-content: center;                         /* Centra el iframe horizontalmente */  
+  align-items: stretch;                            /*Estira el iframe a lo alto del main */
+  flex-grow: 1;                                    /* Ocupa todo el espacio disponible ================================REVISAR=============================*/
+  /*overflow:auto;*/
+  /*height: calc(100vh - 110px - 10vh);              Ajusta el alto del main (menos header y footer) */
+  
+}
+
+/*################################# MAIN - FIN ####################################*/
+/*################################# IFRAME - INICIO ####################################*/
+
+
+#indexIframe {  
+  width: 100%;                                     /* Ancho total del contenedor padre */
+  min-height: 571px;                               /* Altura mínima por si no se mide bien al inicio */  
+  border: none;                                    /* Sin borde */
+  display: block;                                  /* Comportamiento en bloque */ 
+}
+
+
+
+/*################################# IFRAME - FIN ####################################*/
+/*################################# CONTENEDOR HOME - INICIO ####################################*/
+.contenedorhome {
+  width: 78vw;                 /*Ancho del contenedor: 78% del ancho de la ventana */  
+  padding: 0;                  /* Sin espacio interior */
+  margin: auto;                /* Centrado horizontalmente */
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  overflow:hidden;             /*Oculta cualquier contenido que se desborde vertical u horizontalmente */  
+}
+
+.izquierda, .derecha {
+  width: 50%;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.izquierda p, .derecha p{
+  text-align: justify;
+}
+
+.izquierda{
+  width: 50%;
+  background: url(../img/izquierdaXW.svg) repeat top left;
+  background-repeat: repeat-y;                        /* repite solo verticalmente */  
+  background-size: auto;                              /*imagen no cambia de tamaño*/
+  padding: 60px 45px 0 90px;                          /* hace que la imagen cubra todo el div */ 
+}
+
+
+.derecha{
+  display: flex;
+  align-content: flex-start;
+  width: 50%;  
+  background: url(../img/derecha.jpg) no-repeat center 25px;  
+  background-size: auto;  
+  padding: 60px 90px 0 45px;         /* hace que la imagen cubra todo el div */   
+}
+
+.quienes {
+   /*margin-top: 5px;                /* Margen superior */
+   background-color: white;
+   margin: 0;
+}
+
+/* Título dentro de #quienes */
+.quienes > h1 {
+    font-size: 24px;                /* Tamaño del texto */
+    line-height: 24px;              /* Altura de línea */
+    text-align: center;             /* Alinear al centro */
+    margin-bottom: 10px;            /* Margen inferior */
+    font-weight: 400;               /* Peso normal (no bold) */
+    padding-top: 40px;              /* Relleno superior */
+    font-family: DauphinPlain;      /* Fuente personalizada */
+}
+
+.quienes strong {
+  font-weight: bold                 /* Texto en negrita */
+}
+
+footer{
+  grid-row: 3;
+  height: 10vh;
+  width: 78vw;
+  background-color: black;  
+  /*flex-shrink: 0;  Evita que se encoja */
+}
+
+footer p{
+  text-align: center;
+  color: white;
+  padding: 20px 0;
+}
+
+/*################################# CONTENEDOR HOME - FIN ####################################*/
+/*################################# CONTENEDOR PAGES - INICIO   ##############################*/
+.contenedorpages {
+  width: 78vw;                 /* Ancho del contenedor: 78% del ancho de la ventana */ 
+  padding: 0;                  /* Sin espacio interior */
+  margin: auto;                /* Centrado horizontalmente */
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;        /*Oculta cualquier contenido que se desborde vertical u horizontalmente */
+}
+
+.izquierdapages, .derechapages {
+  width: 50%;  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.izquierdapages p, .derechapages p{
+  text-align: justify;
+}
+
+.izquierdapages h5, .derechapages h5{
+  text-align: center;           /* Alinear al centro */
+  margin-bottom: 10px;          /* Margen inferior */   
+  padding-top: 20px;            /* Relleno superior */
+  font-family: Montserrat;       /* Fuente personalizada */
+}
+
+.izquierdapages img, .derechapages img{
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+/* Párrafos dentro de .izquierdapages .derechapages */
+.izquierdapages p>span, .derechapages p>span,
+.card-reveal p>span {
+  text-align: justify;           /* Justificar texto */
+  line-height: 24px;              /* Altura de línea */
+  font-size: 12px;
+  font-weight: bold;
+  color:#333333 ;
+}
+
+.izquierdapages{
+  width: 50%;   
+  background: url(../img/izquierda.svg) top left;    
+  background-size: auto;                              /*imagen no cambia de tamaño*/
+  background-repeat: repeat-y;  
+  padding: 60px 45px 0 90px;                          /* hace que la imagen cubra todo el div */ 
+}
+
+
+.derechapages{
+
+  width: 50%;  
+  background: url(../img/derecha.svg) top right;   
+  background-size: auto;
+  background-repeat: repeat-y;  
+  padding: 60px 90px 0 45px;                             /* hace que la imagen cubra todo el div */   
+}
+
+.texto-en-columnas {
+  width: 100%;
+  background: url(../img/plantillaws.svg) top center;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  column-count: 4;                                        /* Divide el texto en 4 columnas */
+  column-gap: 1.875rem;                                   /* Espacio entre columnas */
+  text-align: justify;                                    /* Opcional: justifica el texto */   
+  padding: 60px 90px 40px 90px;
+}
+
+.texto-en-columnas img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.texto-en-columnas h5{
+  text-align: center;
+}
+
+.ranking{
+  position: relative;
+  width: 100%;                                            /*Que ocupe todo el espacio*/
+  margin: 0 auto;
+}
+
+/*Para no romper la imagen*/
+
+
+.ranking img{
+  display: block;                                         /*Ocupa todo el espacio*/
+  width: 100%;
+  height: auto;
+}
+
+.texto-en-columnas p.leyenda{
+  text-align: center !important;
+  font-weight: bold;
+}
+
+.texto-reproductor{
+  position: absolute;
+  top:  19.5%;
+  left: 6%;
+  color: white;
+
+}
+
+.texto-reproductor span.cancion{
+  font-weight: bold;
+}
+
+div.playlist{
+  padding: 5.4px;
+}
+
+
+
+/*################################# CONTENEDOR PAGES - FIN   ##################################*/
+
+/* ######### COLLAPSIVE POPOUT ######### */
+.collapsible-body span{
+    font-weight: bold !important;
+    color: black;
+}
+
+.collapsible-body p{
+  margin: 0 !important;
+}
+
+
+/* ######### CARDS DE IMAGENES ######### */
+.card .card-title {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card .card-content .card-title {
+    display: block;
+    line-height: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;   
+    text-align: justify;
+}
+
+.card .card-content {
+    padding: 12px;
+    border-radius: 0 0 2px 2px;
+}
+
+/* Estilos responsive (comentados en caso desees activarlos luego) */
+/*
+@media screen and (min-width: 64em) {
+  .imagenlogo {
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .dropdown-content {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+}
+*/

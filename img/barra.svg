@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1920 176">
+  <!-- Generator: Adobe Illustrator 29.0.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 186)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #392d46;
+      }
+
+      .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        font-family: Montserrat-ExtraBold, Montserrat;
+        font-size: 32.73px;
+        font-weight: 700;
+      }
+
+      .st2, .st3 {
+        fill: #fc757f;
+      }
+
+      .st4 {
+        fill: #fdd4d4;
+      }
+    </style>
+  </defs>
+  <g id="Capa_2">
+    <g>
+      <rect class="st1" x=".5" y="-.5" width="1919" height="177"/>
+      <path d="M1919,0v176H1V0h1918M1920-1H0v178h1920V-1h0Z"/>
+    </g>
+  </g>
+  <g id="Capa_1">
+    <g>
+      <rect class="st0" x="-.21" y=".47" width="362.58" height="175.22"/>
+      <rect class="st4" x="270.79" y=".47" width="497.2" height="33"/>
+    </g>
+    <g>
+      <text class="st2" transform="translate(181.47 90.71)"><tspan x="0" y="0">CRINGE</tspan></text>
+      <text class="st2" transform="translate(181.47 122.08)"><tspan x="0" y="0">MUSIC</tspan></text>
+    </g>
+    <g>
+      <g>
+        <path class="st3" d="M127.06,78.56l13.73-12.44-.41-9.4,3.98-2.05c.24,0,2.19,1.72,2.53,2.02,28.25,25.87,23.4,71.61-9.57,90.93-33.19,19.45-75.87.54-83.97-36.8-9.24-42.62,31.06-79.56,72.7-66.17.5.16,3.37,1.07,3.46,1.34l-.59,9.34,3.06,5.79-4.91,17.43ZM120.72,84.64c-10.06-8.58-25.54-4.17-29.56,8.33-4.83,14.99,10.25,28.84,24.77,22.68,12.49-5.3,15.16-22.16,4.79-31.01Z"/>
+        <polygon class="st3" points="143.93 49.25 134.2 52.69 135.68 44.94 143.93 49.25"/>
+      </g>
+      <path class="st1" d="M120.72,84.64c-10.06-8.58-25.54-4.17-29.56,8.33-4.83,14.99,10.25,28.84,24.77,22.68,12.49-5.3,15.16-22.16,4.79-31.01ZM108.69,102.2c-1.97,0-3.58-1.6-3.58-3.58s1.6-3.58,3.58-3.58,3.58,1.6,3.58,3.58-1.6,3.58-3.58,3.58Z"/>
+    </g>
+  </g>
+</svg>
